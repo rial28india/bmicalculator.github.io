@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        header {
+            background: linear-gradient(135deg, #8B0000, #A52A2A, #B22222);
+            padding: 3rem 1rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 25px 25px;
+            border-top: 3px solid #FFD700;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.3);
+            animation: floatParticle 6s infinite ease-in-out;
+        }
+
+        @keyframes floatParticle {
+            0% {
+                transform: translateY(100%) scale(0.7);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translateY(0) scale(1);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-100%) scale(0.7);
+                opacity: 0;
+            }
+        }
+
+        .header-title {
+            font-weight: 700;
+            color: #FFD700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Enhanced Golden Shine Text Effect */
+        .golden-shine-text {
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(to right,
+                    #FFD700 0%,
+                    #FFEC8B 20%,
+                    #FFF8C1 30%,
+                    #FFEC8B 40%,
+                    #FFD700 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+            background-size: 200% auto;
+            animation: shine 5s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: -100px;
+            }
+
+            20% {
+                background-position: 200px;
+            }
+
+            100% {
+                background-position: 200px;
+            }
+        }
+
+        /* Wave Animation */
+        .wave {
+            animation: wave 1.5s linear infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            10% {
+                transform: rotate(14deg);
+            }
+
+            20% {
+                transform: rotate(-8deg);
+            }
+
+            30% {
+                transform: rotate(14deg);
+            }
+
+            40% {
+                transform: rotate(-4deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+
+            60% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* Float Animation */
+        .float {
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | BMI Calculator Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="Botanicals(3).png">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF5F5;
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #B22222, #FFD700, #8B0000, #FFA500, #A52A2A);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            border-radius: 0 0 10px 10px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-red-100 text-gray-900">
+    <header class="text-center p-8 text-white relative overflow-hidden gradient-border">
+        <div class="absolute top-6 left-6 text-3xl float">🍏</div>
+        <div class="absolute top-10 right-10 text-4xl float" style="animation-delay: 0.5s">🏋️‍♂️</div>
+        <div class="absolute bottom-6 left-1/4 text-3xl float" style="animation-delay: 1s">🥑</div>
+        <div class="absolute bottom-10 right-1/4 text-4xl float" style="animation-delay: 1.5s">🚴‍♀️</div>
+        <!-- Light Particle Effects -->
+        <div class="header-particle" style="width: 12px; height: 12px; left: 20%; top: 90%; animation-delay: 0s;"></div>
+        <div class="header-particle" style="width: 10px; height: 10px; left: 40%; top: 80%; animation-delay: 1.5s;">
+        </div>
+        <div class="header-particle" style="width: 15px; height: 15px; left: 60%; top: 85%; animation-delay: 3s;"></div>
+        <div class="header-particle" style="width: 13px; height: 13px; left: 80%; top: 95%; animation-delay: 4.5s;">
+        </div>
+        <div class="relative z-10">
+            <h1 class="text-5xl mb-4 header-title">
+                <span class="golden-shine-text">Terms of Service</span>
+                <span class="wave inline-block ml-2">📜</span>
+            </h1>
+            <p class="text-lg font-medium tracking-wide text-gold-200">
+                <span class="inline-block">Legal terms for using </span>
+                <span class="inline-block bg-yellow-100 bg-opacity-20 px-3 py-1 rounded-full text-yellow-200">BMI
+                    Calculator Online</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="container bg-white p-6 rounded-lg shadow-xl mt-5 w-full max-w-4xl mx-auto mb-10">
+        <div class="prose max-w-none">
+            <h2 class="text-2xl font-bold text-red-800">1. Acceptance of Terms</h2>
+            <p>By using BMI Calculator Online ("Service"), you agree to be bound by these Terms of Service.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">2. Medical Disclaimer</h2>
+            <p>The BMI Calculator provides general health information and should not be considered medical advice.
+                Always consult with a healthcare professional before making health decisions.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">3. Service Usage</h2>
+            <p>You agree to use this Service only for lawful purposes and in a way that does not infringe the rights of
+                others.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">4. Intellectual Property</h2>
+            <p>All content, including text, graphics, and logos, is our property and protected by copyright laws.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">5. Limitation of Liability</h2>
+            <p>We are not liable for any damages resulting from your use of this Service. The tool is provided "as is"
+                without warranties of any kind.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">6. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Your continued use constitutes acceptance of the
+                modified terms.</p>
+
+            <h2 class="text-2xl font-bold text-red-800 mt-6">7. Governing Law</h2>
+            <p>These terms shall be governed by the laws of [Your Country/State] without regard to its conflict of law
+                provisions.</p>
+
+            <p class="mt-8 text-sm text-gray-500">Last updated: April 8, 2025</p>
+        </div>
+    </main>
+
+    <footer class="text-center p-3 text-gray-600 bg-white rounded-lg shadow border-t-2 border-red-200">
+        <p>© 2025 <strong class="text-red-800">BMI Calculator Online</strong> - Free Body Mass Index Tool</p>
+        <div class="mt-2 text-sm">
+            <a href="index.html" class="text-red-600 hover:underline">Home</a> |
+            <a href="privacy.html" class="text-red-600 hover:underline">Privacy Policy</a> |
+            <a href="terms.html" class="text-red-600 hover:underline">Terms of Service</a> |
+            <a href="contact.html" class="text-red-600 hover:underline">Contact Us</a>
+        </div>
+    </footer>
+</body>
+
+</html>
